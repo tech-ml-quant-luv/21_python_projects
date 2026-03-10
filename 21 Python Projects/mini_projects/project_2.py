@@ -3,7 +3,7 @@ import random
 number = random.choice(range(100))
 correct_guess = False
 trials = 0
-while correct_guess==False:
+while not correct_guess:
     trials += 1
     user_input = int(input("Please guess a number: "))
     if user_input<number:
